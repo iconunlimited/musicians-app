@@ -1,0 +1,11 @@
+
+<ol class="breadcrumb">
+	<li>{{#link-to 'index'}}Home{{/link-to}}</li>
+	<li class="active">Musicians</li>
+</ol>
+
+<ul class="list-group">
+	{{#each model as |musician|}}
+		<li class="list-group-item">{{musician.fullName}} - {{musician.bandName}}</li>
+	{{/each}}
+</ul>
